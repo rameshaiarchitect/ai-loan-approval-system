@@ -75,24 +75,24 @@ REJECTED)
 
 ### 1. Start Infrastructure
 
-git clone https://github.com/rameshaiarchitect/ai-loan-infra
-cd ai-loan-infra
+git clone https://github.com/rameshaiarchitect/ai-loan-infra \
+cd ai-loan-infra \
 docker compose up -d
 
 ------------------------------------------------------------------------
 
 ### 2. Start Loan Service
 
-git clone https://github.com/rameshaiarchitect/ai-loan-loan-service
-cd ai-loan-loan-service
+git clone https://github.com/rameshaiarchitect/ai-loan-loan-service \
+cd ai-loan-loan-service \
 mvn spring-boot:run
 
 ------------------------------------------------------------------------
 
 ### 3. Start Credit Agent
 
-git clone https://github.com/rameshaiarchitect/ai-loan-credit-agent
-cd ai-loan-credit-agent
+git clone https://github.com/rameshaiarchitect/ai-loan-credit-agent \
+cd ai-loan-credit-agent \
 uv run uvicorn app.main:app --reload
 
 ------------------------------------------------------------------------
